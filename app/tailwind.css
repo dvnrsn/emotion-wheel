@@ -10,3 +10,21 @@ body {
     color-scheme: dark;
   }
 }
+
+@layer base {
+  :root {
+    /* --anger: #f490b8;
+    --fear: #feb193;
+    --joy: #b8e19b;
+    --love: #f5ef8d;
+    --surprise: #b0e4e2;
+    --sadness: #b3bce3; */
+
+    --anger: lch(71.57% 42.43 354.96);
+    --fear: lch(79.24% 37.94 45.94);
+    --joy: lch(86.92% 25.85 138.38);
+    --love: lch(93.37% 48.59 99.23);
+    --surprise: lch(86.94% 18.22 195.19); /* aqua island */
+    --sadness: lch(76.52% 20.9 278.09); /* pigeon post */
+  }
+}
