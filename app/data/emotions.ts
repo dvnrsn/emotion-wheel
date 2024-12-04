@@ -6,8 +6,8 @@ export const emotions: Emotion[] = [
     emoji: '😠',
     type: 'primary',
     color: 'var(--anger)',
-    from: 'hsl(336.2, 82.1%, 75.9%)',
-    to: 'hsl(304.9, 25.2%, 71.2%)',
+    from: 'var(--anger-from)',
+    to: 'var(--anger-to)',
     nested: [
       {
         name: 'rage',
@@ -56,8 +56,8 @@ export const emotions: Emotion[] = [
     emoji: '😨',
     type: 'primary',
     color: 'var(--fear)',
-    from: 'lch(81.91% 31.85 43.34)',
-    to: 'lch(76.03% 36.73 8.75)',
+    from: 'var(--fear-from)',
+    to: 'var(--fear-to)',
     nested: [
       {
         name: 'scared',
@@ -106,8 +106,8 @@ export const emotions: Emotion[] = [
     emoji: '😔',
     type: 'primary',
     color: 'var(--sadness)',
-    from: 'lch(76.45% 17.98 298.39)',
-    to: 'lch(88.75% 11.28 206.73)',
+    from: 'var(--sadness-from)',
+    to: 'var(--sadness-to)',
     nested: [
       {
         name: 'suffering',
@@ -164,8 +164,8 @@ export const emotions: Emotion[] = [
     type: 'primary',
     emoji: '😂',
     color: 'var(--joy)',
-    from: 'lch(86.92% 25.85 138.38)',
-    to: 'lch(96.17% 24.33 105.49)',
+    from: 'var(--joy-from)',
+    to: 'var(--joy-to)',
     nested: [
       {
         name: 'content',
@@ -238,8 +238,8 @@ export const emotions: Emotion[] = [
     emoji: '😍',
     type: 'primary',
     color: 'var(--love)',
-    from: 'lch(96.17% 24.33 105.49)',
-    to: 'lch(86.71% 29.37 65.32)',
+    from: 'var(--love-from)',
+    to: 'var(--love-to)',
     nested: [
       {
         name: 'affectionate',
@@ -288,8 +288,8 @@ export const emotions: Emotion[] = [
     emoji: '😲',
     type: 'primary',
     color: 'var(--surprise)',
-    from: 'lch(90.04% 13.61 205.23)',
-    to: 'lch(87.53% 17.83 163.58)',
+    from: 'var(--surprise-from)',
+    to: 'var(--surprise-to)',
     nested: [
       {
         name: 'stunned',

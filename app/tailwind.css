@@ -21,10 +21,53 @@ body {
     --sadness: #b3bce3; */
 
     --anger: lch(71.57% 42.43 354.96);
+    --anger-from: lch(71.34% 42.8 355.3);
+    --anger-to: lch(71.21% 22 326.61);
+
     --fear: lch(79.24% 37.94 45.94);
+    --fear-from: lch(81.91% 31.85 43.34);
+    --fear-to: lch(76.03% 36.73 8.75);
+
     --joy: lch(86.92% 25.85 138.38);
+    --joy-from: lch(86.92% 25.85 138.38);
+    --joy-to: lch(96.17% 24.33 105.49);
+
     --love: lch(93.37% 48.59 99.23);
-    --surprise: lch(86.94% 18.22 195.19); /* aqua island */
-    --sadness: lch(76.52% 20.9 278.09); /* pigeon post */
+    --love-from: lch(96.17% 24.33 105.49);
+    --love-to: lch(86.71% 29.37 65.32);
+
+    --surprise: lch(86.94% 18.22 195.19);
+    --surprise-from: lch(90.04% 13.61 205.23);
+    --surprise-to: lch(87.53% 17.83 163.58);
+
+    --sadness: lch(76.52% 20.9 278.09);
+    --sadness-from: lch(76.45% 17.98 298.39);
+    --sadness-to: lch(88.75% 11.28 206.73);
+
+    @media (prefers-color-scheme: dark) {
+      --anger: lch(21.57% 42.43 354.96);
+      --anger-from: lch(21.34% 42.8 355.3);
+      --anger-to: lch(21.21% 22 326.61);
+
+      --fear: lch(29.24% 37.94 45.94);
+      --fear-from: lch(21.91% 31.85 43.34);
+      --fear-to: lch(26.03% 36.73 8.75);
+
+      --joy: lch(26.92% 25.85 138.38);
+      --joy-from: lch(26.92% 25.85 138.38);
+      --joy-to: lch(26.17% 24.33 105.49);
+
+      --love: lch(23.37% 48.59 99.23);
+      --love-from: lch(26.17% 24.33 105.49);
+      --love-to: lch(26.71% 29.37 65.32);
+
+      --surprise: lch(26.94% 18.22 195.19);
+      --surprise-from: lch(20.04% 13.61 205.23);
+      --surprise-to: lch(27.53% 17.83 163.58);
+
+      --sadness: lch(26.52% 20.9 278.09);
+      --sadness-from: lch(26.45% 17.98 298.39);
+      --sadness-to: lch(28.75% 11.28 206.73);
+    }
   }
 }
