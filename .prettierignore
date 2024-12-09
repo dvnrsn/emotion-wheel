@@ -1,0 +1,4 @@
+pnpm-lock.yaml
+public/entry.worker.js
+node_modules
+build 
