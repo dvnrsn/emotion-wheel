@@ -1,6 +1,6 @@
 /// <reference lib="WebWorker" />
 
-import type { DefaultFetchHandler } from "@remix-pwa/sw";
+import type { DefaultFetchHandler } from '@remix-pwa/sw';
 
 export {};
 
@@ -11,20 +11,20 @@ import {
   isDocumentRequest,
   isLoaderRequest,
   Logger,
-} from "@remix-pwa/sw";
+} from '@remix-pwa/sw';
 
 const logger = new Logger({
-  prefix: "[Emotion Wheel]",
+  prefix: '[Emotion Wheel]',
 });
 
-self.addEventListener("install", (event) => {
-  logger.log("Service worker installed");
+self.addEventListener('install', (event) => {
+  logger.log('Service worker installed');
 
   event.waitUntil(self.skipWaiting());
 });
 
-self.addEventListener("activate", (event) => {
-  logger.log("Service worker activated");
+self.addEventListener('activate', (event) => {
+  logger.log('Service worker activated');
 
   event.waitUntil(self.clients.claim());
 });
@@ -48,7 +48,7 @@ export const defaultFetchHandler: DefaultFetchHandler = async ({ context }) => {
   return fetch(request);
 };
 
-const version = "v1";
+const version = 'v1';
 
 const DOCUMENT_CACHE_NAME = `document-cache`;
 const ASSET_CACHE_NAME = `asset-cache`;
@@ -56,7 +56,7 @@ const DATA_CACHE_NAME = `data-cache`;
 
 const documentCache = new EnhancedCache(DOCUMENT_CACHE_NAME, {
   version,
-  strategy: "CacheFirst",
+  strategy: 'CacheFirst',
   strategyOptions: {
     maxEntries: 64,
   },
@@ -64,7 +64,7 @@ const documentCache = new EnhancedCache(DOCUMENT_CACHE_NAME, {
 
 const assetCache = new EnhancedCache(ASSET_CACHE_NAME, {
   version,
-  strategy: "CacheFirst",
+  strategy: 'CacheFirst',
   strategyOptions: {
     maxAgeSeconds: 60 * 60 * 24 * 90, // 90 days
     maxEntries: 100,
@@ -73,7 +73,7 @@ const assetCache = new EnhancedCache(ASSET_CACHE_NAME, {
 
 const dataCache = new EnhancedCache(DATA_CACHE_NAME, {
   version,
-  strategy: "NetworkFirst",
+  strategy: 'NetworkFirst',
   strategyOptions: {
     networkTimeoutInSeconds: 10,
     maxEntries: 72,
