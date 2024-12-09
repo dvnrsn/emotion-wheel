@@ -1,7 +1,8 @@
 import type { WebAppManifest } from '@remix-pwa/dev';
+import { json } from '@remix-pwa/sw';
 
 export const loader = () => {
-  return Response.json(
+  return json(
     {
       short_name: 'PWA',
       name: 'Remix PWA',
@@ -9,6 +10,32 @@ export const loader = () => {
       display: 'standalone',
       background_color: '#d3d7dd',
       theme_color: '#c34138',
+      icons: [
+        {
+          src: 'icons/manifest-icon-192.maskable.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'any',
+        },
+        {
+          src: 'icons/manifest-icon-192.maskable.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'maskable',
+        },
+        {
+          src: 'icons/manifest-icon-512.maskable.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any',
+        },
+        {
+          src: 'icons/manifest-icon-512.maskable.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable',
+        },
+      ],
     } as WebAppManifest,
     {
       headers: {
